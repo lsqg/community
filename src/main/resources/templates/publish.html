@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>lecotime社区</title>
+    <title>发布 --lecotime</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
@@ -40,6 +40,33 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-12" style="background-color: orangered">
+                    <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>发起</h2>
+                    <hr>
+
+                    <form action="">
+                        <div class="form-group">
+                            <label for="title">问题标题(简单扼要)</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="问题标题..">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">问题补充(必填)</label>
+                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tag">添加标签</label>
+                            <input type="text" class="form-control" id="tag" name="tag" placeholder="输入标签，以逗号隔开">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">发布</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-12" style="background-color: #3c763d"></div>
             </div>
         </div>
     </nav>
